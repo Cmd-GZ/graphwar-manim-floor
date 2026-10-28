@@ -646,6 +646,10 @@ $$
 \lfloor x\rfloor\approx-32+\sum_{k=0}^{n}t_k(x+32),\qquad x\in[-32,32)
 $$
 
+```text
+(1/(1+e^(M*sin(pi(x+32))))+2/(1+e^(2*M*sin(pi(x+32)/2)))+4/(1+e^(4*M*sin(pi(x+32)/4)))+8/(1+e^(8*M*sin(pi(x+32)/8)))+16/(1+e^(16*M*sin(pi(x+32)/16)))+32/(1+e^(32*M*sin(pi(x+32)/32))))-32
+```
+
 Notice that the coefficient in the exponent of $t_k(x)$ is $M2^{k}$. That is because at the flip points $m\in2^{k}\mathbb{Z}$ of $t_k$, we have:
 
 $$
